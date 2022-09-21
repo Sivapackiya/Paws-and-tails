@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="browherearemyfigs.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+  .navbar {
+    margin-bottom: 50px;
+    border-radius: 0;
+  }
+  
+  /* Remove the jumbotron's default bottom margin */ 
+   .jumbotron {
+    margin-bottom: 0;
+  }
+ 
+  /* Add a gray background color and some padding to the footer */
+  footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+  }
+  .logo{
+    position: relative;
+    top:-50px;
+    left:-31px;
+  }
+
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<hr>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">
+        <div class= "logo">
+        <img src="imgs/logo.png" height="123" width="123">
+        </div>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<h2>PAWS AND TAILS</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('doggo')"> Dog Food</button>
+  <button class="btn" onclick="filterSelection('acc')"> Accessories</button>
+  <button class="btn" onclick="filterSelection('people')"> Cat food</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column doggo">
+    <div class="content">
+      <img src="imgs/item1.png"  style="width:100%">
+      <h4>Chappi</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column doggo">
+    <div class="content">
+    <img src="imgs/item2.png"  style="width:100%">
+      <h4>Pedigree</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column doggo">
+    <div class="content">
+    <img src="imgs/item3.png"  style="width: 110%;"  >
+      <h4>Sad Pepe</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  
+  <div class="column acc">
+    <div class="content">
+      <img src="imgs/item4.png" alt="Car" style="width:100%">
+      <h4>Leash</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column acc">
+    <div class="content">
+    <img src="imgs/item5.jpg" alt="Car" style="width:100%">
+      <h4>Muzzle</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column acc">
+    <div class="content">
+    <img src="imgs/item6.jpg" alt="Car" style="width:100%">
+      <h4>More muzzle</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
