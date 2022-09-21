@@ -25,10 +25,10 @@
     border-bottom: 2px solid transparent;
 }
 #navbarSupportedContent a:hover{
-    border-bottom: 2px solid #f0e331;
+    border-bottom: 2px solid #ca8141;
 }
 #navbarSupportedContent button{
-    background: #f0e331;
+    background: #ca8141;
     width: 8rem;
     border-radius: 16px;
 }
@@ -47,7 +47,7 @@ section{
     background-image: image("dog1.jpg");
     background-size: cover;
     background-position: center;
-    flex-direction: column;
+    flex-direction: column; 
     margin-top: -50px;
 }
 #home h1{
