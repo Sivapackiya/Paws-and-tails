@@ -11,6 +11,7 @@ body{
 
 .logo {
     width: 200px;
+    padding: 15%;
     display: block;
     margin: 0 auto;
 }
@@ -27,7 +28,7 @@ body{
 
 .center h1{
   text-align: center;
-  padding: 20px 0;
+  padding: 5px 0;
   border-bottom: 1px solid silver;
 }
 .center form{
