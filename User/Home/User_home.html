@@ -1,19 +1,94 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
     <head>
-        <link rel="stylesheet" href="st.css">
+        <link rel="stylesheet" href="style.css">
+        <title> Paws and Tails</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
     </head>
-
     <body>
-        <div id="Charworks">   
-        
-            <h1>Paws and Tails</h1>
+        <!--Navigation_Bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+            <div class="container-fluid">
+                <div class= "logo">
+                    <img src="Images/logo.png" height="80" width="80">
+                </div>
+              <a class="navbar-brand" href="#"><i>Paws and Tails</i></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Categories</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">About</a>
+                  </li>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                  <button class="btn p-2 my-lg-0 my-2">cart</button>
+                  <button class="btn p-2 my-lg-0 my-2">Sign In</button>
+            </div>
+          </nav>
 
-            <button class="button">Buy?</button>
-            <div class="sk">
-            <a href="as.html" target="_blank">This is a link</a>
-        </div>
-    </div>  
+          <!---Home-->
+
+          <section id="home">
+            <h1 class="text-center">Paws and Tails</h1>
+            <p>Variety's of accessories for our lovely best pets to make daily love long lasting</p>
+        </section>
+
+        <!--Categories-->
+
+        <section id="product">
+          <div class="container m-5">
+            <h1 class="text-center my-5">OUR PRODUCTS</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="Images/dog_cato1.png" class="card-img-top">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Dog accessories</h5>
+                          <a href="#" class="btn signin">Dog accessories</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="Images/cat_cato1.png" class="card-img-top">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Cat accessories</h5>
+                          <a href="#" class="btn signin">Cat accessories</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                        <img src="Images/logo.jpeg" class="card-img-top">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">All Products</h5>
+                          <a href="#" class="btn signin">See all Products--></a>
+
+                        </div>
+                      </div>
+                </div>
+            </div>
+            
+              
+            </div>
+          </div>
+      </section>
+
+
+    
+            <!-- JavaScript Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     </body>
-  
     </html>
