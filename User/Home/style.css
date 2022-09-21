@@ -111,3 +111,8 @@ section{
     transition: .2s;
 }
 
+button {
+    background: #ca8141;
+    width: 8rem;
+    border-radius: 16px;
+  }
