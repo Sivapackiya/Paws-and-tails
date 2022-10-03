@@ -4,9 +4,12 @@
    --green:#27ae60;
    --black:#333;
    --white:#fff;
+   --bblack:#000000;
    --bg-color:#eee;
    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
    --border:.1rem solid var(--black);
+   background-image:url('https://us.123rf.com/450wm/kotofonya/kotofonya2103/kotofonya210300057/166272119-seamless-pattern-with-heads-of-different-breeds-dogs-corgi-pug-chihuahua-terrier-husky-pomeranian-te.jpg?ver=6');
+
 }
 
 *{
@@ -17,6 +20,52 @@
    text-decoration: none;
    text-transform: capitalize;
 }
+head{
+   margin-top: 70;
+
+}
+  
+header{
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	position: fixed;
+	background: var(--text-color);
+   
+	color: #121212;
+	box-shadow: 0px 2px 18px 0 rgb(129 162 182 / 20%);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 25px 8%;
+	transition: .3s;
+}
+
+.logo{
+	color: var(--bg-color);
+	font-size: var(--main-font);
+	font-weight: 600;
+	line-height: 0.8;
+}
+
+.navbar{
+	display: flex;
+	
+}
+.navbar a{
+	font-size: var(--p-font);
+	color: var(--bg-color);
+	font-weight: 600;
+	padding: 10px 15px;
+	margin: 0 10px;
+	transition: all .40s ease;
+}
+.navbar a:hover{
+	background: var(--bg-color);
+	color: rgb(0, 0, 0);
+}
+
 
 html{
    font-size: 62.5%;
@@ -31,7 +80,7 @@ html{
    margin-top: 1rem;
    font-size: 1.7rem;
    padding:1rem 3rem;
-   background: var(--green);
+   background: var(--bblack);
    color:var(--white);
    text-align: center;
 }
@@ -51,6 +100,8 @@ html{
 }
 
 .container{
+
+   
    max-width: 1200px;
    padding:2rem;
    margin:0 auto;
