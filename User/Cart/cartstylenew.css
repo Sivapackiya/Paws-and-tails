@@ -106,7 +106,7 @@ font-family: 'Poppins', sans-serif;
 
  padding: 10px 25px;
 
- background-color: green;
+ background-color:#ff033e;
 
  color: white;
 
@@ -120,11 +120,11 @@ font-family: 'Poppins', sans-serif;
 
  background-color: white;
 
- color: green;
+ color: #ff033e;
 
  font-weight: 600;
 
- border: 1px solid green;
+ border: 1px solid #ff033e;
 
 }
 
@@ -296,4 +296,37 @@ font-family: 'Poppins', sans-serif;
 .heading{
     text-align: center;
     font-size: 50px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    background: black;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: #ffffff !important;
+}
+#navbarSupportedContent a{
+    color: #fff;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid #ca8141;
+}
+#navbarSupportedContent button{
+    background: #ca8141;
+    width: 8rem;
+    border-radius: 16px;
 }
