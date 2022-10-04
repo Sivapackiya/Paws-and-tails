@@ -91,24 +91,6 @@
 }
 
 .product-remove{
-<<<<<<< HEAD
-
- position: absolute;
-
- bottom: 20px;
-
- right: 20px;
-
- padding: 10px 25px;
-
- background-color:#ff033e;
-
- color: white;
-
- cursor: pointer;
-
- border-radius: 5px;
-=======
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -117,26 +99,14 @@
     color: white;
     cursor: pointer;
     border-radius: 5px;
->>>>>>> a130a3ce0f77fc75b007a1a1e39d29448f30540d
 
 }
 
 .product-remove:hover{
-<<<<<<< HEAD
-
- background-color: white;
-
- color: #ff033e;
-
- font-weight: 600;
-
- border: 1px solid #ff033e;
-=======
     background-color: white;
     color: green;
     font-weight: 600;
     border: 1px solid green;
->>>>>>> a130a3ce0f77fc75b007a1a1e39d29448f30540d
 
 }
 
@@ -268,40 +238,6 @@
     font-size: 50px;
 }
 
-<<<<<<< HEAD
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-#navbar{
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    padding: .5rem 5rem;
-    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
-    background: black;
-}
-.navbar .navbar-brand{
-    font-size: 25px;
-    font-weight: 800;
-    color: #ffffff !important;
-}
-#navbarSupportedContent a{
-    color: #fff;
-    border-bottom: 2px solid transparent;
-}
-#navbarSupportedContent a:hover{
-    border-bottom: 2px solid #ca8141;
-}
-#navbarSupportedContent button{
-    background: #ca8141;
-    width: 8rem;
-    border-radius: 16px;
-=======
 .mybtn{
     float: right;
->>>>>>> a130a3ce0f77fc75b007a1a1e39d29448f30540d
 }
