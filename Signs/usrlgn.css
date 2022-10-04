@@ -1,9 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-    margin-bottom: 10%;
     font-family: sans-serif;
-    background-image: url("bernese-mountain-dog-gec385f1c9_1920.jpg");
+    background-image: url("dog1.jpg");
     background-size: cover;
     background-position: center;
 }

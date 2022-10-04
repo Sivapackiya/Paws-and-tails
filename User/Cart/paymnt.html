@@ -1,50 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width,
-               initial-scale=1.0"/>
-    <link rel="stylesheet" href="style.css" 
-          class="css" />
-  </head>
-  <body>
-<div class="card-details">
-        <p>Pay using Credit or Debit card</p><br>
-  
-        <div class="card-number">
-          <label> Card Number </label>
-          <input
-            type="text"
-            class="card-number-field"
-            placeholder="###-###-###"/>
-        </div>
+<div class='container'>
+  <div class='window'>
+    <div class='order-info'>
+      <div class='order-info-content'>
+        <head>
+          <link rel="stylesheet" href="style.css">
+        </head>
         
-        <div class="date-number">
-          <label> Expiry Date </label>
-          <input type="text" class="date-number-field" 
-                 placeholder="DD-MM-YY" />
+</div>
+</div>
+        <div class='credit-info'>
+          <div class='credit-info-content'>
+            <table class='half-input-table'>
+              <tr><td>Please select your card: </td><td><div class='dropdown' id='card-dropdown'><div class='dropdown-btn' id='current-card'>Visa</div>
+                <div class='dropdown-select'>
+                <ul>
+                  <li>Master Card</li>
+                  <li>American Express</li>
+                  </ul></div>
+                </div>
+               </td></tr>
+            </table>
+          
+            Card Number
+            <input class='input-field'></input>
+            Card Holder
+            <input class='input-field'></input>
+            <table class='half-input-table'>
+              <tr>
+                <td> Expires
+                  <input class='input-field'></input>
+                </td>
+                <td>CVC
+                  <input class='input-field'></input>
+                </td>
+              </tr>
+            </table>
+            <button class='pay-btn'>Checkout</button>
+
+          </div>
+
         </div>
-  
-        <div class="cvv-number">
-          <label> CVV number </label>
-          <input type="text" class="cvv-number-field" 
-                 placeholder="xxx" />
-        </div>
-        <div class="nameholder-number">
-          <label> Card Holder name </label>
-          <input
-            type="text"
-            class="card-name-field"
-            placeholder="Enter your Name"/>
-        </div><br>
-        <button type="submit" 
-                class="submit-now-btn">
-          submit
-        </button>
       </div>
-    </div>
-  </body>
-</html>
+</div>
