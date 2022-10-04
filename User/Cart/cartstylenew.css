@@ -95,7 +95,7 @@
     bottom: 20px;
     right: 20px;
     padding: 10px 25px;
-    background-color: #ff033e;
+    background-color: #c61a09;
     color: white;
     cursor: pointer;
     border-radius: 5px;
@@ -104,9 +104,9 @@
 
 .product-remove:hover{
     background-color: white;
-    color: #ff033e;
+    color: #c61a09;
     font-weight: 600;
-    border: 1px solid #ff033e;
+    border: 1px solid #c61a09;
 
 }
 
