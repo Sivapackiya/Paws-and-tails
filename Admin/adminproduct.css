@@ -1,0 +1,135 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+}
+
+:root{
+	--bg-color: #ffffff;
+	--text-color: #121212;
+	--main-font: 2.2rem;
+	--p-font: 1.1rem;
+}
+body{
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+header{
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	position: fixed;
+	background: var(--text-color);
+	box-shadow: 0px 2px 18px 0 rgb(129 162 182 / 20%);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 25px 8%;
+	transition: .3s;
+}
+.logo{
+	color: var(--bg-color);
+	font-size: var(--main-font);
+	font-weight: 600;
+	line-height: 0.8;
+}
+#menu-icon{
+	font-size: 38px;
+	color: var(--text-color);
+	z-index: 10001;
+	display: none;
+}
+.navbar{
+	display: flex;
+	
+}
+.navbar a{
+	font-size: var(--p-font);
+	color: var(--bg-color);
+	font-weight: 600;
+	padding: 10px 15px;
+	margin: 0 10px;
+	transition: all .40s ease;
+}
+.navbar a:hover{
+	background: var(--bg-color);
+	color: rgb(0, 0, 0);
+}
+
+section{
+	padding: 100px 8%;
+}
+.container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+	align-items: center;
+	gap: 3rem;
+	text-align: center;
+	cursor: pointer;
+	padding-top: 3rem;
+}
+
+.box{
+	padding: 0px 2p0x 10px 20px;
+	background: transparent;
+	box-shadow: 5px 30px 56.1276px rgba(0, 0, 0, 0.12);
+	border-radius: 10px;
+	position: relative;
+	transition: all .35s ease;
+}
+.box img{
+	width: 50%;
+	height: auto;
+}
+.box h4{
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-bottom: 8px;
+}
+.box h5{
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+.button {
+	display: inline-block;
+	padding: 10px 15px;
+	font-size: 10px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #1e025e;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 9px #999;
+  }
+  
+  .button2 {
+	display: inline-block;
+	padding: 10px 15px;
+	font-size: 10px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #650303;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 9px #999;
+  }
+  
+.btn btn-primary:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+.box:hover{
+	transform: translateY(-5px);
+}
+
