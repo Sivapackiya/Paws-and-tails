@@ -7,6 +7,42 @@
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       background-color: black;
    }
+   header{
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	position: fixed;
+	background: var(--text-color);
+	box-shadow: 0px 2px 18px 0 rgba(182, 135, 129, 0.2);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 25px 8%;
+	transition: .3s;
+}
+.logo{
+	color: var(--bg-color);
+	font-size: var(--main-font);
+	font-weight: 100%;
+	line-height: 0.8;
+}
+.navbar{
+	display: flex;
+	
+}
+.navbar a{
+	font-size: var(--p-font);
+	color: var(--bg-color);
+	font-weight: 600;
+	padding: 10px 15px;
+	margin: 0 10px;
+	transition: all .40s ease;
+}
+.navbar a:hover{
+	background: var(--bg-color);
+	color: rgb(0, 0, 0);
+}
    img {
       width: 100%;
    }
@@ -52,6 +88,29 @@
     <table>
         <tr>
             <td>
+                href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+                <header>
+                    <img src="images/logo.png" height="80" width="80">
+                    <a href="#" class="logo">Paws and Tails</a>
+                    <div class="bx bx-menu" id="menu-icon"></div>
+            
+                    <ul class="navbar">
+                        <li><a href="../Admin/eventmain.html" style="text-decoration: none; ">Event</a></li>
+                        <li><a href="../Admin/coupon.html" style="text-decoration: none; ">Coupon</a></li>
+            
+                        <br><br>
+                        <li><a href="../Admin/add.html" style="text-decoration: none; "> Add</a></li>
+                        <li><a href="../Admin/admin_login.html" style="text-decoration: none; ">Sign out</a></li>
+                    </ul>
+            
+                    
+                </header>
+            
 <div class="couponContainer">
 <div class="detailContainer">
 </div>
